@@ -1,0 +1,125 @@
+/* Resetting margins and paddings for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: darkslategray; */
+    background-color: rgb(25, 59, 59);
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: floralwhite;
+    border: 8px solid floralwhite;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px cyan;
+    text-align: center;
+}
+
+.heading {
+    margin-bottom: 20px;
+    color: aqua;
+};
+
+.heading h1 {
+    font-size: 24px;
+    color: darkcyan;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+#input-type {
+    padding: 10px;
+    flex: 1; 
+    border: 2px solid cyan;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+#add-btn, #delete_all {
+    padding: 10px 20px;
+    border: none;
+    background-color: cyan;
+    color: lightgoldenrodyellow;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#add-btn:hover {
+    background-color: darkcyan;
+}
+
+#delete_all:hover {
+    background-color: darkcyan;
+}
+.list-item span {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap; 
+    max-width: calc(100% - 70px); 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: block; 
+}
+
+
+#list-container {
+    margin-top: 20px;
+    text-align: left;
+}
+
+
+.list-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: lightcyan;
+    border: 1px solid cyan;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.list-item button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.list-item button:hover {
+    background-color: darkred;
+}
